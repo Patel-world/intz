@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+a#xyz{
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    --uk-breakpoint-s: 640px;
+    --uk-breakpoint-m: 960px;
+    --uk-breakpoint-l: 1200px;
+    --uk-breakpoint-xl: 1600px;
+    --uk-leader-fill-content: .;
+    visibility: visible;
+    list-style: none;
+    cursor: pointer;
+    background-color: #ff6b69;
+    border: 1px solid #ff6b69;
+    border-radius: 0;
+    display: inline-block;
+    font-family: montserrat,Arial,Geneva,sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    width: 250px!important;
+    -webkit-text-size-adjust: none;
+    outline: 0;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+a:hover{
+    color: #2d2f32;
+    text-decoration: underline;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+}
+
+.overlay-content {
+    padding-top: 38px;
+    width: 100%;
+    height: 84%;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: visible;
+    overflow: visible;
+ 
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    z-index: 0;
+  position: absolute;
+  top: -24px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+.fancybox-iframe, .fancybox-video {
+    background: rgba(0,0,0,0);
+    border: 0;
+    display: block;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+}
+</style>
+</head>
+<body>
+    <a id="xyz" href="javascript:void(0)" class="closebtn" onclick="openNav()"> Download Festive Brochure
+    </a>
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <iframe id="fancybox-frame1637949177537" name="fancybox-frame1637949177537" class="fancybox-iframe" allowfullscreen="allowfullscreen" allow="autoplay; fullscreen" src="https://issuu.com/kandima/docs/2021festive-issuu?fr=sMGUzZDM3NzY0NTQ" scrolling="auto"></iframe>
+  </div>
+</div>
+
+
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.display = "none";
+}
+</script>
+     
+</body>
+</html>
