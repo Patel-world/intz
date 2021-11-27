@@ -7,6 +7,8 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+
+
 a#xyz{
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -39,6 +41,7 @@ a:hover{
 }
 
 .overlay {
+  justify-content: space-evenly;
   height: 100%;
   width: 100%;
   display: none;
@@ -51,14 +54,14 @@ a:hover{
 }
 
 .overlay-content {
-    padding-top: 38px;
-    width: 100%;
+    justify-content: center;
+    padding-top: 71px;
+    width: 80%;
     height: 84%;
     max-width: 100%;
     max-height: 100%;
     overflow: visible;
     overflow: visible;
- 
 }
 
 .overlay a {
@@ -74,12 +77,13 @@ a:hover{
   color: #f1f1f1;
 }
 
+
 .overlay .closebtn {
-    z-index: 0;
-  position: absolute;
-  top: -24px;
-  right: 45px;
-  font-size: 60px;
+    z-index: 1;
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
 }
 
 @media screen and (max-height: 450px) {
@@ -117,7 +121,7 @@ a:hover{
 
 <script>
 function openNav() {
-  document.getElementById("myNav").style.display = "block";
+  document.getElementById("myNav").style.display = "flex";
 }
 
 function closeNav() {
